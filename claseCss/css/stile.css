@@ -1,0 +1,54 @@
+/* Por medio de una etiqueta */
+span {
+  color: blue;
+}
+
+h1 {
+  font-size: 20px;
+  color: brown;
+}
+
+/* Por medio de clases */
+.parrafo {
+  color: yellow;
+}
+
+.main-nav {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  background-color: darkslategray;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+/* Por medio de un id */
+#texto {
+  color: darkgreen;
+  font-size: 15px;
+}
+
+/* Expecificando en css */
+.main-nav__item a {
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+  background-color: tomato;
+}
+
+/* Por medio de pseudoClases */
+.main-nav__item a:hover {
+  color: blueviolet;
+}
+
+.main-nav__item a:active {
+  color: aqua;
+}
+
+/* Por medio de pseudoElementos */
+.main-nav__item a::after {
+  content: " | ";
+}

@@ -1,0 +1,69 @@
+/* La medida de pixel es absoluta ya que el tamaño del pixel
+es el que tiene el dispositivo. Este no cambia por el tamaño
+que se le de al navegador. */
+p {
+  font-size: 18px;
+}
+
+body {
+  font-size: 20px;
+}
+
+main {
+  background-color: rgb(199, 118, 118);
+  width: 100%;
+  height: 40px;
+}
+
+/* El porcentaje es relativo ya que varia dependiendo de lo
+tome como referencia. En este caso toma como referencia el
+tamaño que hereda de la etiqueta html. */
+p {
+  font-size: 120%; /* 8px */
+}
+
+/* Em toma la medida de si padre directo.
+De esta manera los dos 2 terminarian con tamaños distintos.
+Este funciona casi igual que %. */
+.text-container {
+  font-size: 1.5em;
+}
+
+.text-container div {
+  font-size: 1.5em;
+}
+
+/*  funciona igual que el em, con la diferencia que es relativo
+al valor de la fuente del elemento html, y no tiene en cuenta
+el valor heredado o del elemento que lo contiene. */
+p {
+  font-size: 1rem;
+}
+
+/* Para usar rem de la mejor manera es establecer el html font-zise
+y despues poder usar rem como si fueran px */
+html {
+  font-size: 62.5%;
+}
+
+p {
+  font-size: 2.8rem;
+}
+
+main div {
+  font-size: 1.6rem;
+}
+
+main {
+  /* Importante tener los tamaños base cuando se trabaja
+  con min- o max- por lo general con el width.
+  Con heigth no es obligatorio un tamaño base. */
+  width: 80%;
+  min-width: 100px;
+  max-width: 200px;
+  min-height: 200px;
+  max-height: 400px;
+}
+
+/* vh y vw es porcentajes de la pantalla para su alto
+y ancho. 100vh es el 100% del alto de la pantalla. */

@@ -1,0 +1,25 @@
+/* Una manera de arreglar lo de main es resetear
+los tamaños de todas las cajas desde el principio. */
+/* Este el el selector universal. */
+* {
+  padding: 0;
+  margin: 0;
+
+  /* Con esto podemos hacer que el tamaño de la caja
+  sea calculado por el total de la suma del padding,
+  margen, y demas. De esta manera al width le resta el
+  el padding y borde automaticamente. */
+  box-sizing: border-box;
+}
+
+/* Con solo esta configuracion el modelo de caja
+es tendria un tamaño del 100% mas el tamaño del 
+padding, margen y borde. Con esto hace que la caja
+salga de la pantalla y haya un scroll horizontal */
+main {
+  width: 100%;
+  height: 500px;
+  border: 10px solid grey;
+  padding: 20px 35px;
+  margin: 50px;
+}

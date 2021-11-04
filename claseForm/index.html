@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase formulario</title>
+</head>
+<body>
+  <!-- Ejemplo de formulario mal hecho. -->
+  <div>
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+    <input type="text" />
+  </div>
+  <!-- Formulario bien. -->
+  <!-- El action es la interaccion con el formulario
+  para el momento de enviar la informacion. -->
+  <form action="">
+    <!-- El atrubuto for es para identificar el id del input al que pertenece.
+    con label agrupamos el input con su descripcion y demas para que sea como
+    un bloque de solo ese campo. -->
+    <label for="nombre">
+      <span>Cual es tu nombre?</span>
+      <!-- El atributo placeholder es para colocar informacion soble el campo.
+      Como una marca de agua. -->
+      <input type="text" id="nombre" placeholder="Tu nombre">
+    </label>
+    <label for="fecha">
+      <span>Que dia inicio en Platzi?</span>
+      <input type="date" id="fecha" placeholder="DD/MM/AAAA">
+    </label>
+    <label for="horario">
+      <span>En que horario estudias?</span>
+      <input type="time" id="horario" placeholder="HH:mm">
+    </label>
+  </form>
+</body>
+</html>

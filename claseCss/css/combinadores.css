@@ -1,0 +1,46 @@
+/* Hermanos sercano. Solo si el primer elemento
+sigue inmediatamente despues de elemento que tendra
+la propiedad.
+Entiendase '+' como inmediatamente despues. */
+
+/* Cambia a rojo las etiquetas p que esten inmediatamente
+despues de un h2. */
+/* h2 + p {
+  color: red;
+}
+
+p + h2 {
+  color: blue;
+} */
+
+div {
+  background-color: grey;
+}
+
+/* Hermanos generales. Siempre que tenga de etiqueta
+al mismo nivel se aplicara la propiedad.*/
+
+/* Si la etiqueta h2 se encuentra en el mismo nivel que
+p entonces cambia el color de p. */
+h2 ~ p {
+  color: red;
+}
+
+/* Hijos. Le agrega los estilos a la etiqueta si tiene
+esa etiqueta como padre directo. */
+
+/* Cambia a morado las etiquetas p que tengan como padre
+directo un div. */
+div > p {
+  color: purple;
+}
+
+/* Descendiente. Agrega los estilos a la etiqueta si desciende
+de la etiqueta que se expecifica. La diferencia es que no hace
+falta que sea descendiente directo. */
+
+/* Todas la p que esten dentro de un div, independiente de que
+esten o no en primer nivel. */
+div p {
+  color: blue;
+}

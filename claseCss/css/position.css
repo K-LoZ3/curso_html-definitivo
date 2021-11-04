@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parent {
+  border: 2px black dotted;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+#two {
+  background-color: green;
+}
+
+/* Position absolute. Esto hace que la etiqueta conserve su posicion
+pero los objetos no tomen en cuenta esta etiqueta para su posicion.
+Con relative, funciona parecido pero los otros objetos siguen tomando
+en cuenta la posicion del objeto para saber su posicion. */
+/* Si cambianmos #two a absolute el tres se pone detras de 2 y parece que
+que no esta. Si le ponemos relative el 3 sigue en el lugar que ya tenia.
+Con los 2 se puede cambiar la posicion de 2, lo que diferencia es en que
+posicion quedan las demas etiquetas. */
+/* Por defecto estan en static */
+/* Para mover la etiqueta, con top: ; left, botton o rigth solo cuando
+cambiamos a absolute, relative, fixed o sticky */
+.principal {
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+}
+
+.principal .title {
+  background-color: red ;
+  color: black;
+  border: 1px black solid;
+  border-radius: 6px;
+  position: relative;
+  top: 5px;
+  width: 60px;
+  left: 40%;
+  text-align: center;
+}
+
+.principal .content {
+  background-color: grey;
+  border: 1px black solid;
+  border-radius: 20px;
+  margin: auto;
+  padding: 20px;
+}

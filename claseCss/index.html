@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase css</title>
+  <style>
+    /* Esta no es la mejor forma de incluir el css. */
+    p {
+      font-size: 60px;
+    }
+  </style>
+  <link rel="stylesheet" href="./css/stile.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <!-- Usamos la metodologia de BEM para nombrar las clases y poder usar css
+      mejor con estilos para cada parte de la pagina. -->
+      <ul class="main-nav">
+        <li class="main-nav__item"><a href="#">Home</a></li>
+        <li class="main-nav__item"><a href="#">Cursos</a></li>
+        <li class="main-nav__item"><a href="#">Istructores</a></li>
+        <li class="main-nav__item"><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <ul>
+        <li>Estilo diferente</li>
+        <li>Al header</li>
+      </ul>
+    </section>
+    <h1>Prueba</h1>
+    <span>Otro texto</span>
+    <!-- Esta no es la mejor forma de incluir css. -->
+    <p style="color: red;">Soy un texto</p>
+    <p class="parrafo">Parrafo</p>
+    <p id="texto">Un texto</p>
+  </main>
+</body>
+</html>

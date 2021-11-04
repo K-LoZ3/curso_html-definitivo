@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.barra, footer {
+  background-color: tomato;
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+  align-items: center;
+}
+
+.logo, .nav, .info, .redes {
+  margin: .5rem 5rem;
+  font-size: 2rem;
+}
+
+.nav {
+  list-style: none;
+}
+
+.nav li {
+  display: inline-block;
+  background-color: teal;
+  border-radius: .4rem;
+  height: 3.5rem;
+}
+
+.container {
+  height: 80vh;
+  display: flex;
+  flex-basis: 10rem;
+}
+
+.public, .main {
+  height: 100%;
+}
+
+.public {
+  background-color: violet;
+  flex-grow: 1;  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  padding: .5rem;
+  flex-grow: 4;
+  background-color: darkgrey;
+}
+
+.box {
+  background-color: cadetblue;
+  margin: 1rem;
+  flex-basis: .5rem;
+  flex-grow: 1;
+  width: 80%;
+  border-radius: .6rem;
+}
+
+footer {
+  background-color: darkslategrey;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clase de video</title>
+</head>
+<body>
+  <main>
+    <section>
+      <!-- controls es un atributo de la etiqueta video para que en el navegador
+      el video tenga controles (Pausa, Play, adelantar...).
+      preload="auto" es para que el video renderice desde que entra al video y
+      asi carge mas rapido.
+      el #t=10,60 en la url del video es para especificar en que segundo comienza
+      al hacer play y en cual termina o se pausa automaticamente el video. -->
+      <video src="./video.mp4#t=10,60" controls preload="auto"></video>
+      <!-- Otra forma de hacerlo es dentro de la etiqueta video poner una etiqueta
+      source, con varias de estas llamamos distintos videos en diferentes formatos
+      y de esta manera el navegador prioriza dependiendo del formato que el entienda
+      y el orden en el que estan las etiquetas. -->
+      <video controls preload="auto">
+        <source src="./video.mp4#t=10,60" />
+        <source src="./video.mp3#t=10,60" />
+        <source src="./video.m4v#t=10,60" />
+      </video>
+    </section>
+  </main>
+</body>
+</html>

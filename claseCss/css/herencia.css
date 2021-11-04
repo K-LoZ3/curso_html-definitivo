@@ -1,0 +1,17 @@
+/* Con esto tanto h1 como p Cambiarian la funte ya que estas etiquetas
+heredan esta propiedad de sus etiquetas padre, pero solo p cambiaria el
+tamaño de la fuente ya que h1 no hereda esta propiedad, esta propiedad
+en h1 es establecida. */
+html {
+  font-size: 75%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Para que h1 herede el tamaño de fuente que tiene html, debemos decirle
+a h1 que esta propiedad sera heredada. */
+h1 {
+  font-size: inherit;
+}
+
+/* Con todo esto se entiende que las propiedades que le des a una etiqueta
+seran heredadas a las etiquetas hijo. */
